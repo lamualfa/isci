@@ -3,17 +3,11 @@
 ## List Contents
 
 - [What is ISCI?](#what-is-isci)
-
 - [Why should i use ISCI?](#why-should-i-use-isci)
-
 - [Example](#example)
-
 - [List ISCI Drafts](#list-isci-drafts)
-
   - [Draft-1](/drafts/draft-1)
-
 - [Available ISCI Libraries](#available-isci-libraries)
-
 - [FAQ](#faq)
 
 ## What is ISCI?
@@ -108,4 +102,4 @@ You can save it in a _JSON File_ or in a _Database_ that supports _JSON_ storage
 
 ### Is ISCI slow?
 
-Absolutely not. Library [js-isci](https://github.com/laodemalfatih/js-isci) can generate up to _1,500,000_ _Unique ID_ (10 characters each) only in _1 Second_.
+Absolutely not. Library [js-isci](https://github.com/laodemalfatih/js-isci) can generate up to _**1,500,000**_ _Unique ID_ (10 characters each) only in _1 Second_.
