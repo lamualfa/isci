@@ -2,6 +2,8 @@
 
 Release on **7 Feb 2020**
 
+## List Contents
+
 - [JSON Schema](#json-schema)
 - [ISCI Formats](#isci-formats)
 - [Available Keyword Types](#available-keyword-types)
@@ -15,7 +17,7 @@ Release on **7 Feb 2020**
 
 ## JSON Schema
 
-If you need _JSON Schema_ for this Draft, see [schema.json](/schema.json) file.
+If you need _JSON Schema_ for this Draft, see [schema.json](/drafts/draft-1/schema.json) file.
 
 ## ISCI Formats
 
@@ -275,4 +277,4 @@ Output: (Run 3x)
 
 ## Examples
 
-See [examples](/examples) directory.
+See [examples](/drafts/draft-1/examples) directory.
