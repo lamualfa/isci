@@ -1,0 +1,20 @@
+{
+  "pattern": "<region_id>_[unique_character]_[random_character]",
+  "comment": "region_id is useful for grouping users by country",
+  "keywords": {
+    "unique_character": {
+      "type": "incrCharset",
+      "index": 0,
+      "increaser": 1,
+      "length": 10,
+      "charset": "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
+    },
+    "random_character": {
+      "type": "randCharset",
+      "minLength": 5,
+      "maxLength": 8,
+      "charset": "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789",
+      "comment": "Random characters make it difficult for people not to try to find IDs with dummy or bruteforce techniques"
+    }
+  }
+}

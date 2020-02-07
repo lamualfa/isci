@@ -1,0 +1,20 @@
+{
+  "pattern": "[unique_character][random_character]",
+  "comment": "HTML Class Name can't start with number.",
+  "keywords": {
+    "unique_character": {
+      "type": "incrCharset",
+      "index": 0,
+      "increaser": 1,
+      "length": 3,
+      "charset": "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ_",
+      "comment": "Remove number from charset"
+    },
+    "random_character": {
+      "type": "randCharset",
+      "minLength": 1,
+      "maxLength": 3,
+      "charset": "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789_"
+    }
+  }
+}

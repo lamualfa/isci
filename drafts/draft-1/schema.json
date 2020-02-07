@@ -1,0 +1,78 @@
+{
+  "$id": "https://raw.githubusercontent.com/laodemalfatih/isci/master/drafts/draft-1/schema.json",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "ISCI Draft-1",
+  "type": "object",
+  "required": [
+    "pattern",
+    "keywords"
+  ],
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "comment": {
+      "type": "string"
+    },
+    "pattern": {
+      "type": "string"
+    },
+    "keywords": {
+      "patternProperties": {
+        ".": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "type"
+          ],
+          "properties": {
+            "type": {
+              "type": "string",
+              "enum": [
+                "randCharset",
+                "incrNumber",
+                "incrCharset",
+                "incrCharsets",
+                "currentDate",
+                "currentUnixTimestamp"
+              ]
+            },
+            "comment": {
+              "type": "string"
+            },
+            "index": {
+              "type": "number"
+            },
+            "increaser": {
+              "type": "number"
+            },
+            "charset": {
+              "type": "string"
+            },
+            "charsets": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "startNumber": {
+              "type": "number"
+            },
+            "length": {
+              "type": "number"
+            },
+            "minLength": {
+              "type": "number"
+            },
+            "maxLength": {
+              "type": "number"
+            },
+            "format": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    }
+  }
+}
